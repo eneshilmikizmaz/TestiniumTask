@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: MainTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 11.211 s <<< FAILURE! - in MainTest
+select_a_product  Time elapsed: 1.373 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Not on product detail page! ==> expected: <true> but was: <false>
+	at MainTest.select_a_product(MainTest.java:28)
+
+add_product_to_cart  Time elapsed: 0.039 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=90.0.4430.212)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T7H1V25', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CELALE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51345}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9980c801d68beff83ec29331c5556e41
+	at MainTest.add_product_to_cart(MainTest.java:35)
+
+go_to_cart  Time elapsed: 0.788 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Product was not added to cart! ==> expected: <true> but was: <false>
+	at MainTest.go_to_cart(MainTest.java:45)
+

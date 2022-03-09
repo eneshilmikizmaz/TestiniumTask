@@ -5,7 +5,7 @@
 - list
 - list
 
-'System.out.print("hello world!");'
+`System.out.print("hello world!");`
 
 `console.log("Hello, World!");`
 

@@ -5,7 +5,7 @@
 - list
 - list
 
-'''java
+'''Java
 System.out.print("hello world!");
 '''
 
